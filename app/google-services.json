@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "42110464085",
+    "firebase_url": "https://thememeapp.firebaseio.com",
+    "project_id": "thememeapp",
+    "storage_bucket": "thememeapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42110464085:android:3ab5cfb7b3aeab13",
+        "android_client_info": {
+          "package_name": "com.example.ashish.thememeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42110464085-ir16vta4372soea0rqb16v17hdkdp2mn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ashish.thememeapp",
+            "certificate_hash": "9276d206434133ea5176aeebfb86b3255865a76e"
+          }
+        },
+        {
+          "client_id": "42110464085-fm9vn5rim3aa2spbq2p98aubs8hsic43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr_iMfUQcD0dybcFzccRZyCIEoo4KuRG8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42110464085-fm9vn5rim3aa2spbq2p98aubs8hsic43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
