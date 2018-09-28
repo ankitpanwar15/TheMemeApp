@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".LoginPage">
 
     <ImageView
-        android:id="@+id/imageBackground"
+        android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:contentDescription="background image"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,27 +18,12 @@
         app:srcCompat="@drawable/gradient_background" />
 
     <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="217dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="128dp"
-        android:background="@drawable/button_outer"
-        android:onClick="clickCall"
-        android:text="Login"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
         android:id="@+id/btnSignup"
         android:layout_width="217dp"
         android:layout_height="59dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="64dp"
         android:background="@drawable/button_outer"
         android:onClick="clickCall"
         android:text="Sign Up"
@@ -48,31 +32,65 @@
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <!--<TextView
-        android:id="@+id/btn"
+    <EditText
+        android:id="@+id/editMail"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="264dp"
+        android:background="@drawable/button_outer"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/button_outer"
+        android:ems="10"
+        android:hint="****"
+        android:inputType="textPassword"
+        android:paddingLeft="16dp"
+        android:selectAllOnFocus="true"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:text="Sign Up"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/btnLogin"
         android:layout_width="200dp"
         android:layout_height="29dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="11dp"
         android:onClick="clickCall"
-        android:text="Don't have a account, Register!"
+        android:text="Already have a account? Login."
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />-->
-
-    <ImageView
-        android:id="@+id/imageLogo"
-        android:layout_width="251dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="128dp"
-        android:layout_marginEnd="8dp"
-        android:contentDescription="TODO"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/title_appname" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

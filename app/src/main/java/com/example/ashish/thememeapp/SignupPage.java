@@ -4,20 +4,17 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class SignupPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_signup_page);
     }
 
-
-
-
     void clickCall(View view){
-
         switch (view.getId()){
 
             case R.id.btnLogin :
@@ -25,10 +22,13 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.btnSignup :
-                startActivity(new Intent(this,SignupPage.class));
+                Toast.makeText(this, "Signin....", Toast.LENGTH_SHORT).show();
                 break;
 
         }
+
+
     }
+
 
 }
