@@ -26,20 +26,9 @@ public class SignupPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup_page);
 
-        //FirebaseApp.initializeApp(this);
-
         textEmail = findViewById(R.id.editMail);
         textPassword = findViewById(R.id.editPassword);
-
-
-        Toast.makeText(SignupPage.this, "bef",
-                Toast.LENGTH_SHORT).show();
-
         authObj = FirebaseAuth.getInstance();
-
-        Toast.makeText(SignupPage.this, "aff",
-                Toast.LENGTH_SHORT).show();
-
     }
 
     /*@Override
