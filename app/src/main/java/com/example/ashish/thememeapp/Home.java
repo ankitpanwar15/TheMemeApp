@@ -8,7 +8,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Home extends AppCompatActivity {
 
-    TextView homeTxt;
+    TextView homeTt;
     private FirebaseAuth authObj;
 
     @Override
@@ -18,8 +18,8 @@ public class Home extends AppCompatActivity {
 
         authObj = FirebaseAuth.getInstance();
 
-        homeTxt = findViewById(R.id.textView2);
-        homeTxt.setText(authObj.getCurrentUser().getEmail());
+        homeTt = findViewById(R.id.textView2);
+        homeTt.setText(authObj.getCurrentUser().getEmail());
 
 
     }
